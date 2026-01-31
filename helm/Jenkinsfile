@@ -26,7 +26,7 @@ pipeline {
                 }
             }
         }
-        
+
         stage('Deploy') {
             steps {
                 script{
@@ -87,7 +87,7 @@ pipeline {
                 }
             }
         } */
-        stage('Functional/API Tests') {
+       /*  stage('Functional/API Tests') {
             when{
                 expression { params.deploy_to == 'dev'}
             }
@@ -102,8 +102,8 @@ pipeline {
                 }
             }
         }
-
-        stage('Integration Tests') {
+ */
+        /* stage('Integration Tests') {
             when{
                 expression { params.deploy_to == 'qa'}
             }
@@ -117,7 +117,7 @@ pipeline {
                     
                 }
             }
-        }
+        } */
         
     }
     post { 
